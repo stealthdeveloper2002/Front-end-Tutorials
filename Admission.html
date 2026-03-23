@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="Admission.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Admission Form</h2>
+        <form id="admissionForm" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td>Enrollment No.</td>
+                    <td><input type="text" name="enrollment_no" id="enrollment_no"></td>
+                    <td>Roll No.</td>
+                    <td><input type="text" name="roll_no" id="roll_no"></td>
+                </tr>
+                <tr>
+                    <td>Form No.</td>
+                    <td colspan="3"><input type="text" name="form_no" id="form_no"></td>
+                </tr>
+                <tr>
+                    <td>Course Applied</td>
+                    <td><input type="text" name="course_applied" id="course_applied"></td>
+                    <td>Branch</td>
+                    <td><input type="text" name="branch" id="branch"></td>
+                </tr>
+                <tr>
+                    <td>New Admission</td>
+                    <td colspan="3">
+                        <label><input type="radio" name="latest_admission" value="yes"> Yes</label>
+                        <label><input type="radio" name="latest_admission" value="no"> No</label>
+                    </td>
+                </tr>
+
+
+
+                <!-- More form fields as needed -->
+                <tr>
+                    <td>Student Name</td>
+                    <td colspan="3"><input type="text" name="student_name" id="student_name"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                    <td>Gender</td>
+                    <td>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile No.</td>
+                    <td><input type="tel" name="mobile_no" id="mobile_no"></td>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+              
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="Admission.js"></script>
+</body>
+
+</html>
