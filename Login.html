@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login & SignUp Form</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Lottie Lottie = JSON-based animations (exported from Adobe After Effects) that run in the browser using JavaScript. -->
+    <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+
+</head>
+
+<link rel="stylesheet" href="login.css">
+
+<body>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="card" id="card">
+
+                <!-- LOGIN -->
+                <div class="side front">
+                    <h2 class="title">Welocme Back</h2>
+
+                    <div id="lottie1" class="lottie"></div>
+
+                    <div class="input-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <button class="btn">Login</button>
+                    <div class="link" onclick="flipCard()">Create account</div>
+
+                </div>
+
+                <!-- SIGNUP -->
+
+                <div class="side back">
+                    <h2 class="title">Join Us</h2>
+
+                    <div id="lottie2" class="lottie"></div>
+
+                    <div class="input-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <button class="btn">Sign Up</button>
+                    <div class="link" onclick="flipCard()">Already have account</div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="login.js"></script>
+    </body>
+
+</html>
